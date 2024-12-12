@@ -1,0 +1,8 @@
+torch==2.3.1
+pandas==2.0.0
+numpy==1.26.4
+transformers
+peft
+quantstats==0.0.62
+yfinance
+statsmodels>=0.14.0

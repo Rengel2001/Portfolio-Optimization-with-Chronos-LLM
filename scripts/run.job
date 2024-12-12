@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=Long_Short
+#SBATCH --output=/home/ryengel/PEPO/results/long_short_backtest.txt
+#SBATCH --error=/home/ryengel/PEPO/results/long_short_backtest.txt
+#SBATCH --time=2-00:00
+#SBATCH --mem=50000
+#SBATCH --gres=gpu:0
+#SBATCH --nodelist=orion
+
+# Navigate to project directory
+cd /home/ryengel/PEPO/scripts
+
+# Display GPU info
+nvidia-smi
+
+# Run model training script
+python3 long_short_backtest.py
